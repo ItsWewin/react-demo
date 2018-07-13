@@ -1,5 +1,4 @@
 import reducer from './reducer.js';
-import AddTodo from './views/addTodo.js';
-import TodoList from './views/todoList.js';
+import todoView from './views/todos.js';
 
-export { reducer, AddTodo, TodoList }
+export { reducer, todoView }
