@@ -2,8 +2,22 @@
 <html lang="en">
   <head>
     <title>Hello React</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
     <div id="root"></div>
+    <a href="#" onclick="get1()">点击测试</a>
+    <script>
+      function get1() {
+        $.ajax({
+          url: 'http://localhost:3300/myblog/test',
+          type: 'get',
+          dataType: 'jsonp',
+          success: function(result) {
+            console.log(result);
+          }
+        });
+      }
+    </script>
   </body>
 </html>
