@@ -10,8 +10,9 @@
     <script>
       function get1() {
         $.ajax({
-          url: 'http://localhost:3300/myblog/test',
-          type: 'get',
+          url: 'http://localhost:3300/myblog/test_post',
+          type: 'post',
+          contentType: 'application/json',
           success: function(result) {
             console.log(result);
           }
